@@ -38,8 +38,8 @@ public class CannonController : MonoBehaviour
     void Shoot()
     {
         var bullet = poolManager.GetPooledObject("PlayerBullet");
-        bullet.transform.position = _cannon.transform.position;
-        bullet.transform.rotation = _cannon.transform.rotation;
+        bullet.transform.position = firePoint.transform.position;
+        bullet.transform.rotation = firePoint.transform.rotation;
 
     }
 }

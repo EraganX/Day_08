@@ -41,7 +41,7 @@ public class BulletScript : MonoBehaviour
 
         if (isPlayer == false && other.gameObject.CompareTag("Player"))
         {
-            //other.GetComponent<EnemyHealth>().DecreaseHealth();
+            other.GetComponent<PlayerHealth>().DecreaseHealth();
             Instantiate(explotion, transform.position, transform.rotation);
             gameObject.SetActive(false);
             // Destroy(gameObject);
